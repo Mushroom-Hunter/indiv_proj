@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--
+      Temporarily disable cerner-smart-embeddable-lib
+      <link rel='stylesheet' type='text/css' href='./lib/css/cerner-smart-embeddable-lib-1.0.0.min.css'>
+    -->
+  <title>Mini project 3 SMART App</title>
+</head>
+<script src='./lib/js/fhir-client.js'></script>
+<script src='./lib/js/fhir-client-cerner-additions-1.0.0.js'></script>
+<script src='./lib/js/plotly-latest.min.js'></script>
+
+<script>
+  FHIR.oauth2.authorize({
+    'client_id': 'chart',
+    'scope': 'patient/Patient.read patient/Observation.read launch online_access openid profile'
+    // 'client_id': 'b62eeee8-013e-4281-8ffb-9f4b7737b89e',
+    // 'scope': 'patient/Patient.read patient/Observation.read launch online_access openid profile'
+  });
+</script>
+
+
+</html>

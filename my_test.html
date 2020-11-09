@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Test HTML</h1>
+    <p id="demo"></p>
+    <script>
+        const client = new FHIR.client({
+            serverUrl: "https://r4.smarthealthit.org",
+            tokenResponse: {
+                patient: "2e27c71e-30c8-4ceb-8c1c-5641e066c0a4"
+            }
+        });
+        // client.request("Patient").then(console.log).catch(console.error);
+        client.request(`Patient/${client.patient.id}`);
+    </script>
+
+</body>
+</html>

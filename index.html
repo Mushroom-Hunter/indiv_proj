@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./lib/css/styles.css">
+</head>
+
+<body>
+
+  <div class="grid-container">
+    <header class="header">
+      <div>
+        Patient Name:
+        <span class="banner-value" id="patient_name">..</span>
+        Gender:
+        <span class="banner-value" id="gender">..</span>
+        DOB:
+        <span class="banner-value" id="dob">..</span>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main-overview">
+        <div class="small-card">
+          <div>Height</div>
+          <div class="ob-value" id="height">undefined</div>
+        </div>
+        <div class="small-card">
+          <div>Weight</div>
+          <div class="ob-value" id="weight">undefined</div>
+        </div>
+        <div class="small-card">
+          <div>Systolic Blood Pressure</div>
+          <div class="ob-value" id="sys">undefined</div>
+        </div>
+        <div class="small-card">
+          <div>Diastolic Blood Pressure</div>
+          <div class="ob-value" id="dia">undefined</div>
+        </div>
+        <div class="small-card">
+          <div>LDL</div>
+          <div class="ob-value" id="ldl">undefined</div>
+        </div>
+        <div class="small-card">
+          <div>HDL</div>
+          <div class="ob-value" id="hdl">undefined</div>
+        </div>
+      </div>
+
+      <!-- graphs of medications, weights -->
+      <div class="big-card">
+        <div class="card">
+          <div class="title">
+            Recent Medication Requests
+          </div>
+          <ul id="med_list"></ul>
+        </div>
+
+        <div class="card">
+          <div class="title">
+            BMI
+          </div>
+          <div id="bmi_chart"></div>
+
+          <ul id="bodyWeight_list"></ul>
+        </div>
+      </div>
+
+      <div class="big-card">
+        <div class="section-title">
+          <h2>Lab test results</h2>
+        </div>
+
+      </div>
+
+      <!-- graphs of glucose, HDL, LDL -->
+      <div class="big-card">
+        <div class="card">
+          <div class="title">
+            Glucose
+          </div>
+          <ul id="glucose_list"></ul>
+        </div>
+
+      <!-- HDL -->
+        <div class="card">
+          <div class="title">
+            HDL
+          </div>
+          <ul id="hdl_list"></ul>
+        </div>
+
+        <!-- LDL-->
+        <div class="card">
+          <div class="title">
+            LDL
+          </div>
+          <ul id="ldl_list"></ul>
+        </div>
+      </div>
+
+
+      <div class="big-card">
+        <div class="card" id="chart"></div>
+      </div>
+
+
+
+<!--      &lt;!&ndash;  Test run!!!!&ndash;&gt;-->
+<!--      <div id="tester" style="width:600px;height:250px;">-->
+<!--        <h3>Test plot</h3>-->
+<!--        <div id="myDiv"></div>-->
+<!--      </div>-->
+
+
+    </main>
+  </div>
+
+  <script src='./lib/js/fhir-client.js'></script>
+  <script src="./lib/js/get-data.js"></script>
+  <script src='./lib/js/plotly-latest.min.js'></script>s
+
+  <!-- uncomment below script and comment above script to switch for easy local testing -->
+<!--   <script src="./lib/js/get-data-test.js"></script>-->
+</body>
+
+</html>
