@@ -83,12 +83,10 @@ body {
   margin: 20px;
 }
 
-/* .big-card {
-  column-count: 2;
-  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
-  column-gap: 10px;
+.big-card-color {
   margin: 20px;
-} */
+  color: white;
+}
 
 .card {
   display: flex;
@@ -117,16 +115,17 @@ body {
   float: left;
   width: 20%;
   padding: 10px;
-  background: #1ea6ff;
+  background: #C0C0C0;
   color: white;
   font-size: 18px;
-  border: 1px solid grey;
+  border: 2px solid grey;
   border-left: none;
   cursor: pointer;
 }
 
 .button1 {
   color: black;
+  background: #C0C0C0;
 }
 
 .button1:hover {
@@ -139,7 +138,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  background-color: #293543;
+  background-color: #1ea6ff;
   margin-bottom: 5px;
   margin-top: 5px;
   -webkit-column-break-inside: avoid;
@@ -147,4 +146,5 @@ body {
   padding-bottom: 0px;
   padding-top: 0px;
   box-sizing: border-box;
+  color: #ffffff;
 }
