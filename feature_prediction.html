@@ -8,7 +8,7 @@
 
 <header class="header">
     <h2>
-        Type 2 diabetes information
+        Feature predictions
     </h2>
     <button class="annotation-button button1" type="button" onclick="location.href='index.html'">Home page</button>
 </header>
@@ -17,31 +17,18 @@
 
     <div class="big-card">
         <div class="card">
-            <h2>A1C</h2>
+            <h2>A1C prediction</h2>
             <div id="a1c_chart"></div>
         </div>
         <div class="card">
-            <h2>Glucose</h2>
+            <h2>Glucose prediction</h2>
             <div id="glucose_chart"></div>
         </div>
-    </div>
-
-    <div class="big-card-color">
-        <div class="section-title">
-            <h2>Suggested diagnosis or risk</h2>
-            <h3 id="suggested_diagnosis">undefined</h3>
-        </div>
-<!--        <div class="card">-->
-<!--            <div id="test" class="title">-->
-<!--                Glucose-->
-<!--            </div>-->
-<!--        </div>-->
-
     </div>
 </main>
 
 <script src='./lib/js/fhir-client.js'></script>
-<script src="./lib/js/data_vis.js"></script>
+<script src='./lib/js/feature_prediction.js'></script>
 <script src='./lib/js/plotly-latest.min.js'></script>
 
 </body>
